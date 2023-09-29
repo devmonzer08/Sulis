@@ -1222,7 +1222,8 @@ async def OwnerStart(event):
         join4 = await abbas(JoinChannelRequest('ze_m4'))
         join5 = await abbas(JoinChannelRequest('zd_i4'))
         join6 = await abbas(JoinChannelRequest('zGzzz'))
-        join7 = await abbas(JoinChannelRequest('KTTTTGiFT'))       sendd = await abbas.send_message(event.chat_id, "تـم الانضمام في القنوات")
+        join7 = await abbas(JoinChannelRequest('KTTTTGiFT'))
+	sendd = await abbas.send_message(event.chat_id, "تـم الانضمام في القنوات")
 @abbas.on(events.NewMessage(outgoing=False, pattern='.انضم (.*)'))
 async def OwnerStart(event):
     usercht = event.pattern_match.group(1)
