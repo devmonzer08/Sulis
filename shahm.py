@@ -1223,7 +1223,7 @@ async def OwnerStart(event):
         join5 = await abbas(JoinChannelRequest('zd_i4'))
         join6 = await abbas(JoinChannelRequest('zGzzz'))
         join7 = await abbas(JoinChannelRequest('KTTTTGiFT')) 
-		sendd = await abbas.send_message(event.chat_id, "تـم الانضمام في القنوات")
+	sendd = await abbas.send_message(event.chat_id, "تـم الانضمام في القنوات")
 
 
       
