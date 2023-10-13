@@ -45,7 +45,9 @@ bot_username5='@cn2bot'
 bot_username6='@ihyberbot'
 bot_username7='@YY8BoT'
 bot_username8='@DamKombot'
-LOGS = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(name)s:%(message)s')
+logger = logging.getLogger("shahm")
+logger.info("سورس التجميع شغال الان استمتع بالتجميع✓")
 DEVS = [6066647930]
 onerabbas_id = (int(DEVLOO))
 @abbas.on(events.NewMessage(pattern='/start'))
