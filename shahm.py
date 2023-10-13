@@ -333,7 +333,7 @@ async def _(event):
                     continue
     
         await abbas.send_message(event.chat_id, "تم الانتهاء من التجميع")
-@abbas.on(events.NewMessage(outgoing=False ,pattern=".تجميع دعمكم"))
+@abbas.on(events.NewMessage(outgoing=True ,pattern=".تجميع دعمكم"))
 async def _(event):
     await event.reply("جاري تجميع النقاط")
     channel_entity = await abbas.get_entity(bot_username8)
