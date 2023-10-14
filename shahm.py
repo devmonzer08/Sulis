@@ -1063,7 +1063,7 @@ async def OwnerStart(event):
 @abbas.on(events.NewMessage(outgoing=False, pattern=r'.الهدية (.*)'))
 async def OwnerStart(event):
     await event.reply('جاري جمع الهدية من البوت المرسل')
-    await event.reply('جاري تجميع الهدية من البوت المرسل')
+#    await event.reply('جاري تجميع الهدية من البوت المرسل')
     pot = event.pattern_match.group(1)
     sender = await event.get_sender()
     if sender.id == onerabbas_id :
@@ -1081,7 +1081,7 @@ async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == onerabbas_id:
         await event.reply("جاري تجميع النقاط")
-        await event.reply("جاري تجميع النقاط")
+#        await event.reply("جاري تجميع النقاط")
         #
         channel_entity = await abbas.get_entity(pot)
         await abbas.send_message(pot, '/start')
@@ -1129,7 +1129,7 @@ async def OwnerStart(event):
                await event.reply(f"**✣ حسنا سوف اقوم بعملية التجميع \n✣ عدد الثواني بين كل محاولة : {numw}\n✣ التجميع من بوت : @{pot}**")
                #
                channel_entity = await abbas.get_entity(pot)
-               await abbas.send_message(pot, '**جاري بدأ عملية التجميع بواسطة شهم**')
+#               await abbas.send_message(pot, '**جاري بدأ عملية التجميع بواسطة شهم**')
                await abbas.send_message(pot, '/start')
                await asyncio.sleep(2)
                msg0 = await abbas.get_messages(pot, limit=1)
