@@ -227,12 +227,12 @@ async def OwnerStart(event):
         await asyncio.sleep(2)
         msg0 = await abbas.get_messages(bot_username, limit=1)
         await msg0[0].click(2)
-        await asyncio.sleep(2)
+        await asyncio.sleep(3)
         msg1 = await abbas.get_messages(bot_username, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
-            await asyncio.sleep(2)
+            await asyncio.sleep(3)
             list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
