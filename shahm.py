@@ -6,7 +6,7 @@ import re
 import os
 import sys
 from asyncio.exceptions import CancelledError
-#from config import *
+from config import *
 import logging
 import asyncio
 import time
